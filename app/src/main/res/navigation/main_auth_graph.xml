@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_activity_nav_graph"
+    app:startDestination="@id/recipesListFragmentDestination">
+
+    <fragment
+        android:id="@+id/recipesListFragmentDestination"
+        android:name="android.luispouso.recipes.features.recipes.list.ui.RecipesListFragment"
+        android:label="RecipesListFragment"
+        tools:layout="@layout/fragment_recipes">
+
+        <action
+            android:id="@+id/action_recipesListFragmentDestination_to_detailRecipeFragment"
+            app:destination="@id/detailRecipeFragment" />
+        <action
+            android:id="@+id/action_recipesListFragmentDestination_to_createRecipeFragment"
+            app:destination="@id/createRecipeFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailRecipeFragment"
+        android:name="android.luispouso.recipes.features.recipes.detail.ui.RecipeDetailFragment"
+        android:label="fragment_detail_recipe"
+        tools:layout="@layout/fragment_recipe_detail">
+        <argument
+            android:name="recipeId"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailRecipeFragment_to_recipesListFragmentDestination"
+            app:destination="@id/recipesListFragmentDestination" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRecipeFragment"
+        android:name="android.luispouso.recipes.features.recipes.creator.ui.CreateRecipeFragment"
+        android:label="fragment_create_recipe"
+        tools:layout="@layout/fragment_create_recipe" >
+        <action
+            android:id="@+id/action_createRecipeFragment_to_recipesListFragmentDestination"
+            app:destination="@id/recipesListFragmentDestination" />
+    </fragment>
+</navigation>

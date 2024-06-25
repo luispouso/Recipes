@@ -1,0 +1,20 @@
+<!-- res/values/attrs.xml -->
+<resources>
+    <!-- Definición del atributo personalizado colorToolbarBackground -->
+    <attr name="colorToolbarBackground" format="reference|color"/>
+    <attr name="colorItemBackground" format="reference|color"/>
+    <attr name="rippleEffect" format="reference|color"/>
+    <attr name="textToolBar" format="reference|color"/>
+    <attr name="textName" format="reference|color"/>
+    <attr name="textBtnLogin" format="reference|color"/>
+    <attr name="textBtnNewUser" format="reference|color"/>
+    <attr name="textSubName" format="reference|color"/>
+    <attr name="colorBackgroundDark" format="reference|color"/>
+    <attr name="colorBackground" format="reference|color"/>
+    <attr name="colorBackgroundLogin" format="reference|color"/>
+    <attr name="btnLoginDisable" format="reference|color"/>
+    <attr name="btnLoginEnable" format="reference|color"/>
+    <attr name="btnNewUserDisable" format="reference|color"/>
+    <attr name="btnNewUserEnable" format="reference|color"/>
+    <attr name="textButton" format="reference|color"/>
+</resources>

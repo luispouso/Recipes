@@ -1,16 +1,40 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.Recipes" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    <style name="Theme.Recipes" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
-        <item name="colorPrimaryVariant">@color/purple_700</item>
-        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorPrimary">@color/create_color</item>
+        <item name="colorPrimaryVariant">#AD561C</item>
+        <item name="colorOnPrimary">@color/gray_firebase</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/splash_background</item>
         <item name="colorOnSecondary">@color/black</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <item name="textToolBar">@color/just_cook</item>
+        <item name="textName">#D3D6D5</item>
+        <item name="textSubName">#E1E6E5</item>
+        <item name="textButton">#000000</item>
+        <item name="textBtnLogin">#000000</item>
+        <item name="textBtnNewUser">#000000</item>
+        <item name="rippleEffect">@color/black</item>
+        <item name="colorItemBackground">@color/black</item>
+        <item name="colorToolbarBackground">@color/black</item>
+        <item name="colorBackground">#292929</item>
+        <item name="colorBackgroundDark">@color/black</item>
+        <item name="colorBackgroundLogin">@color/black</item>
+        <item name="btnLoginDisable">@color/btn_disable_night</item>
+        <item name="btnLoginEnable">@color/btn_enable_login_night</item>
+        <item name="btnNewUserDisable">@color/btn_disable_night</item>
+        <item name="btnNewUserEnable">@color/btn_enable_new_user_night</item>
+
+        <item name="android:statusBarColor">@color/black</item>
+
         <!-- Customize your theme here. -->
+    </style>
+
+    <style name="Theme.App.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/splash_background</item>
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher</item>
+        <item name="postSplashScreenTheme">@style/Theme.Recipes</item>
     </style>
 </resources>

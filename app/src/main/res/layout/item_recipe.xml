@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    android:background="@drawable/ripple_effect">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivItem"
+        android:layout_width="80dp"
+        android:layout_height="0dp"
+        android:padding="16dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:srcCompat="@drawable/ic_launcher_background" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvItemTitle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/segoe_ui_bold"
+        android:gravity="bottom"
+        android:maxLines="1"
+        android:paddingBottom="3dp"
+        android:textColor="?attr/textName"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/tvItemDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivItem"
+        app:layout_constraintTop_toTopOf="@+id/ivItem"
+        tools:text="@string/app_name" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvItemDescription"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:ellipsize="end"
+        android:fontFamily="@font/segoe_ui"
+        android:gravity="top"
+        android:maxLines="1"
+        android:paddingTop="3dp"
+        android:textSize="16sp"
+        android:textColor="?attr/textSubName"
+        app:layout_constraintBottom_toBottomOf="@+id/ivItem"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tvItemTitle"
+        app:layout_constraintTop_toBottomOf="@+id/tvItemTitle"
+        tools:text="@string/app_name" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

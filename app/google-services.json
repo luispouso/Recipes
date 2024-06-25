@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "832939326900",
+    "project_id": "recetas-faciles-c3750",
+    "storage_bucket": "recetas-faciles-c3750.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832939326900:android:f739c6de8604c6f4c006e1",
+        "android_client_info": {
+          "package_name": "android.luispouso.recipes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRccCEWOaQtqmE7Ba8nwqgluPwe4HczW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:832939326900:android:b255eb4e6b71ea4cc006e1",
+        "android_client_info": {
+          "package_name": "android.luispouso.recipes"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRccCEWOaQtqmE7Ba8nwqgluPwe4HczW8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
